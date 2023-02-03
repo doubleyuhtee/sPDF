@@ -33,9 +33,9 @@ logLevel in compile := Level.Warn
 
 scmInfo := Some(
   ScmInfo(
-    url("https://github.com/cloudify/sPDF"),
-    "scm:git:https://github.com/cloudify/sPDF.git",
-    Some("scm:git:git@github.com:cloudify/sPDF.git")
+    url("https://github.com/doubleyuhtee/sPDF"),
+    "scm:git:https://github.com/doubleyuhtee/sPDF.git",
+    Some("scm:git:git@github.com:doubleyuhtee/sPDF.git")
   )
 )
 
@@ -63,7 +63,7 @@ libraryDependencies ++= Seq (
 publishMavenStyle := true
 
 publishTo := {
-  val nexus = "https://oss.sonatype.org/"
+  val nexus = "https://s01.oss.sonatype.org/"
   if (version.value.trim.endsWith("SNAPSHOT"))
     Some("snapshots" at nexus + "content/repositories/snapshots")
   else
@@ -86,6 +86,12 @@ pomExtra := (
       <id>cloudify</id>
       <name>Federico Feroldi</name>
       <email>pix@yahoo.it</email>
+      <url>http://www.pixzone.com</url>
+    </developer>
+    <developer>
+      <id>doubleyuhtee</id>
+      <name>William Hanson</name>
+      <email>doubleyuhtee@gmail.com</email>
       <url>http://www.pixzone.com</url>
     </developer>
   </developers>
